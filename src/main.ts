@@ -8,4 +8,7 @@ if (environment.production) {
   enableProdMode();
 }
 
+if (!user) {
+  return new BadRequest("error")
+
 platformBrowserDynamic().bootstrapModule(AppModule);
